@@ -5,5 +5,5 @@
 	[Password]		VARCHAR(250) NOT NULL,
 
 	CONSTRAINT PK_User PRIMARY KEY CLUSTERED ([Id]),
-	FOREIGN KEY ([Id]) REFERENCES Person([Id])
+	CONSTRAINT FK_User_Person FOREIGN KEY ([Id]) REFERENCES dbo.[Person]([Id])
 )

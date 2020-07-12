@@ -5,8 +5,9 @@
 	[Person]	INT			 NOT NULL,
 	[Parent]	INT			 NULL,
 	[GiftDate]	DATETIME	 NULL,
+
 	CONSTRAINT PK_Node PRIMARY KEY CLUSTERED ([Id]),
-	FOREIGN KEY ([Person]) REFERENCES Person([Id]),
-	FOREIGN KEY ([Parent]) REFERENCES Person([Id]),
-	FOREIGN KEY ([Tree]) REFERENCES [Tree] ([Id])
+	CONSTRAINT FK_Node_Tree FOREIGN KEY ([Tree]) REFERENCES dbo.[Tree] ([Id]),
+	CONSTRAINT FK_Node_Person FOREIGN KEY ([Person]) REFERENCES dbo.[Person] ([Id]),
+	CONSTRAINT FK_Node_Parent FOREIGN KEY ([Person]) REFERENCES dbo.[Person] ([Id]),
 )

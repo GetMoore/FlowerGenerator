@@ -66,5 +66,6 @@
     <Build Include="Tables\PaymentOption.sql" />
     <Build Include="Tables\PaymentOptionType.sql" />
     <Build Include="Tables\Tree.sql" />
+    <Build Include="Tables\Log.sql" />
   </ItemGroup>
 </Project>
