@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[User]
+(
+	[Id]			INT IDENTITY NOT NULL,
+	[UserName]		VARCHAR(250) NOT NULL,
+	[Password]		VARCHAR(250) NOT NULL,
+
+	CONSTRAINT PK_User PRIMARY KEY CLUSTERED ([Id]),
+	FOREIGN KEY ([Id]) REFERENCES Person([Id])
+)
