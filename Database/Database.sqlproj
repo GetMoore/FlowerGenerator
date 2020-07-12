@@ -58,6 +58,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="PostDeploy" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\User.sql" />
@@ -67,5 +68,6 @@
     <Build Include="Tables\PaymentOptionType.sql" />
     <Build Include="Tables\Tree.sql" />
     <Build Include="Tables\Log.sql" />
+    <PostDeploy Include="PostDeploy\PostDeploy.sql" />
   </ItemGroup>
 </Project>
